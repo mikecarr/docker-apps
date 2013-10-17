@@ -1,10 +1,13 @@
-# IN PROGRESS
 
 ## Docker MySQL
 
 ### Build
     
     docker build -t ssat/mysql . 
+
+### Configure
+
+Change username,password, database in add_mysql_user.sh file
 
 ### Run
 
