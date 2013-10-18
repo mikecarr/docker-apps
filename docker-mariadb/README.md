@@ -1,4 +1,9 @@
-## Docker MySQL
+
+## Docker MariaDB
+
+MariaDB - An enhanced, drop-in replacement for MySQL.
+https://mariadb.org/
+
 
 ### Build
     
@@ -13,11 +18,6 @@ Change username,password, database in add_mysql_user.sh file
     docker run -d -i -t mcarr/mysql:latest
 
 ### Example connection:
-
-    docker ps
-    ID                  IMAGE               COMMAND                CREATED             STATUS              PORTS
-    3c2ef9c70f6d        mcarr/mysql:latest   /bin/bash /app/add_m   About an hour ago   Up About an hour    49161->22, 49162
-    ->3306
 
     mysql -P 49162 -h 127.0.0.1 -u docker -p
 
