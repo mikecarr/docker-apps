@@ -7,15 +7,15 @@ https://mariadb.org/
 
 ### Build
     
-    docker build -t mcarr/mysql . 
+    docker build -t mcarr/mariadb. 
 
 ### Configure
 
-Change username,password, database in add_mysql_user.sh file
+Change username,password, database in setup_start.sh file
 
 ### Run
 
-    docker run -d -i -t mcarr/mysql:latest
+    docker run -d -i -t mcarr/mariadb:latest
 
 ### Example connection:
 
