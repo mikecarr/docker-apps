@@ -2,7 +2,7 @@
 
 FROM ubuntu 
 
-MAINTAINER Mike Carr mcarr@qualcomm.com
+MAINTAINER Mike Carr mcarr67@gmail.com
 
 # see https://github.com/dotcloud/docker/issues/1024, Docker.IO replaces default /sbin/init with it's own
 RUN dpkg-divert --local --rename --add /sbin/initctl
