@@ -3,7 +3,7 @@
 # VERSION               0.0.1
 
 FROM      	base
-MAINTAINER 	Mike Carr "mcarr@qualcomm.com"
+MAINTAINER 	Mike Carr "mcarr67@gmail.com"
 
 # make sure the package repository is up to date
 RUN 		echo "deb http://archive.ubuntu.com/ubuntu precise main universe" > /etc/apt/sources.list
