@@ -1,5 +1,9 @@
 #!/bin/sh
 
+USERNAME=rabbitmq
+PASSWORD=rabbitmq
+VHOST=/rabbitmq
+
 while getopts "u:p:v:" ARG 
 do
   case $ARG in

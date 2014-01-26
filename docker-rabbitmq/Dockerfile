@@ -12,7 +12,7 @@ RUN echo "deb http://archive.ubuntu.com/ubuntu precise main universe" > /etc/apt
 RUN apt-get update
 RUN apt-get upgrade
 
-RUN apt-get install -q -y wget erlang-nox logrotate supervisor
+RUN apt-get install -q -y wget erlang-nox logrotate supervisor openssh-server 
 
 RUN wget http://www.rabbitmq.com/releases/rabbitmq-server/v3.1.5/rabbitmq-server_3.1.5-1_all.deb
 
@@ -25,9 +25,15 @@ RUN rm -f rabbitmq-server*.deb
 
 RUN rabbitmq-plugins enable rabbitmq_management
 
+# ssh stuff
+RUN mkdir /var/run/sshd
+RUN echo 'root:password' | chpasswd
+ADD   ./supervisord.conf /etc/supervisor/supervisord.conf
+
 # expose memcached port
 EXPOSE 5672 
 EXPOSE 15672
+EXPOSE 22 
 
 ENTRYPOINT ["/app/add_user.sh"]
 

@@ -1,3 +1,5 @@
+#!/bin/sh
+
 ROOT_PASSWORD=docker
 DATABASE_NAME=docker
 DATABASE_USER=docker
