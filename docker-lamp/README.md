@@ -30,4 +30,4 @@ Change username,password, database in add_mysql_user.sh file
 
     ssh root@localhost -p 49161
 
-    http://mcarrsbx.na.qualcomm.com:49398/phpmyadmin
+    http://localhost:49398/phpmyadmin
